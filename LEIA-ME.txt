@@ -1,0 +1,56 @@
+DESAFIO PREMIADO — PACOTE DE DESENVOLVIMENTO
+============================================
+
+INCLUÍDO
+- index.html: jogo responsivo em português, interface original, categorias, pontuação e explicação das respostas.
+- server.js: servidor Node.js com endpoint para geração de perguntas via API de IA.
+- sobre.html, privacidade.html, termos.html, contato.html: páginas informativas iniciais.
+- manifest.webmanifest, icon.svg e sw.js: base instalável (PWA) e cache de páginas para navegação básica.
+- pages.css: estilo das páginas informativas.
+- package.json: comando de inicialização.
+- .env.example: exemplo de variáveis de ambiente.
+
+JOGAR SEM IA
+Abra index.html em um navegador para testar o quiz com o banco local. Alguns recursos PWA e as páginas amigáveis funcionam plenamente quando o servidor está rodando.
+
+EXECUTAR LOCALMENTE
+1. Instale Node.js 18 ou mais recente.
+2. Abra um terminal nesta pasta.
+3. (Opcional) Configure OPENAI_API_KEY como variável de ambiente para ativar perguntas por IA.
+   Linux/macOS: export OPENAI_API_KEY="sua-chave"
+   PowerShell: $env:OPENAI_API_KEY="sua-chave"
+4. Execute: npm start
+5. Acesse http://localhost:3000
+6. Para conferir o servidor: http://localhost:3000/health
+
+PUBLICAR
+1. Use uma hospedagem compatível com Node.js (por exemplo, Render ou equivalente).
+2. Envie todos os arquivos desta pasta para o serviço/repositório.
+3. Defina o comando de início como npm start.
+4. Configure OPENAI_API_KEY nas variáveis de ambiente da hospedagem. Não coloque a chave no HTML.
+5. Teste a página inicial, /health, /sobre, /privacidade, /termos e /contato.
+6. Para um domínio próprio, registre o domínio e configure o DNS conforme as instruções da hospedagem.
+
+MONETIZAÇÃO
+- O site ainda não tem anúncios ativos nem aprovação do Google AdSense.
+- Antes de solicitar análise, substitua os avisos de modelo nas páginas de privacidade, termos e contato por informações verdadeiras e revise a política para refletir serviços, cookies, dados e anúncios realmente usados.
+- Não incentive cliques nos anúncios, nem os misture aos botões do jogo.
+- Tráfego e receita não são garantidos. Primeiro publique, teste e atraia visitantes reais.
+- Para um aplicativo Android no futuro, pode-se estudar o Google AdMob, respeitando as políticas.
+
+IA E CUSTOS
+A geração de perguntas depende de uma chave válida de API e de conexão com o servidor. O uso da API pode gerar custos separados. O endpoint limita solicitações a 8 por minuto por IP como proteção básica; isso não substitui monitoramento e proteção robusta contra abuso. Revise as respostas da IA, pois ela pode errar.
+
+PONTUAÇÃO E LIMITES DA VERSÃO
+- Acerto: +10 pontos.
+- Erro: −5 pontos.
+- Pontos virtuais não têm valor financeiro e não podem ser sacados.
+- Estatísticas são guardadas localmente no navegador; não há contas nem ranking global.
+- Não há pagamentos, carteira de criptomoedas ou prêmios em dinheiro.
+
+ANTES DE LANÇAR AO PÚBLICO
+- Preencha e valide os dados de contato do responsável.
+- Revise os documentos legais com base na operação real.
+- Teste em vários celulares e navegadores.
+- Configure monitoramento de custos e de erros.
+- Considere que a aprovação do AdSense não é garantida.

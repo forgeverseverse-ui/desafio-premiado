@@ -1,0 +1,9 @@
+{
+  "name": "desafio-premiado-quiz",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Jogo de quiz responsivo com perguntas locais e integração opcional com IA",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" }
+}

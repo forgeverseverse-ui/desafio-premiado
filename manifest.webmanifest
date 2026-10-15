@@ -1,0 +1,19 @@
+{
+  "name": "Desafio Premiado",
+  "short_name": "Desafio",
+  "description": "Jogo de perguntas e respostas para aprender e se divertir.",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fff8f2",
+  "theme_color": "#ff875a",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
